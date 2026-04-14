@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework.authtoken',
+    'users',
     'rest_framework',
     'films',
     'django.contrib.admin',
@@ -40,6 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTENTIFICATION_CLASSES':[
+        'rest_framework.authentification.TokenAuthentication'
+    ]
+}
+
+
 
 MIDDLEWARE = [
     'querycount.middleware.QueryCountMiddleware',
