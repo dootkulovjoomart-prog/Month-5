@@ -46,7 +46,9 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTENTIFICATION_CLASSES':[
         'rest_framework.authentification.TokenAuthentication'
-    ]
+    ] ,
+
+    "PAGE_SIZE": 3
 }
 
 
