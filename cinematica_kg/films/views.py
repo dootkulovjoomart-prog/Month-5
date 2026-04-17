@@ -18,7 +18,7 @@ from rest_framework.generics import (ListAPIView ,
                                       )
 
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.viewsets import  ModelViewSet , 
+from rest_framework.viewsets import  ModelViewSet
 
 class CustomPagination(PageNumberPagination):
      def get_paginated_response(self, data):
